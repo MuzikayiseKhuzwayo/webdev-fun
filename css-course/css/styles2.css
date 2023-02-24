@@ -1,0 +1,39 @@
+/* CSS Stylesheet for index2 */
+
+#first{
+ color: rgb(255, 0, 0);
+ background-color: rgb(0,0,0);
+}
+
+#second{
+ color: crimson;
+ background: yellow;
+}
+
+/* You can use RGB values instead of colors as well. From 0 to 255 in red green and blue */
+#third {
+ color: rgb(255, 255, 0);
+ background: rgb(90, 35, 20);
+}
+
+/* RGBA controls opacity as well in the fourth value */
+#fourth {
+ color: rgba(20, 0, 100, 0.7);
+ background: rgba(90, 35, 20, 0.1);
+}
+
+/* Hex values give you much more color choices
+You can use any number from 0-9 and ABCDEF which stand for 11, 12 13 14 and 15
+
+Syntax is #FF0000 (Red) and #00FF00 (Green)
+*/
+
+#fifth {
+ color: #f15825;
+ background: #000000;
+}
+
+
+
+
+

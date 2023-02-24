@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Not A Virgin</title>
+</head>
+<body>
+ <!--Hello. This is a comment. Below here is a big boy heading wit two paragraphs. One of those paragraphs was made with a lorem ipsum emmet shortcut-->
+ <h1 id="#top">Hello Bitch</h1>
+ <p>This is not my first, I'm still Awesome!</p>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque doloremque, assumenda commodi sint id sequi nulla cum praesentium ipsam magni atque, eum perspiciatis soluta odio animi ducimus nostrum itaque corporis.</p>
+ <!--These two images below were sauced differently Bro. One is in a subfolder of the project while the other one is rendered straight from a source in the internet-->
+ <h3>This is an example of an image in the file system</h3>
+ <img src="./images/image_1.jpg" alt="I Ju' Pu'd up in a Tonka">
+ <h3>This is an example of an image in the internet</h3>
+ <img src="https://images.pexels.com/photos/2802300/pexels-photo-2802300.jpeg?auto=compress&cs=tinysrgb&w=300" width="260" alt="Pexels Image, Bitch">
+ <!--This is a link. href attribute determines the file or page that is meant to be navigated to and target attribute indicates where a page would open. Since target is blank here, then target would be a new tab or Blank tab. Default setting for target would be opening on the same page-->
+ <br>
+ <a href="./about.html">Visit this link for more info</a>
+ <p>What if we have a lot of words and we have to nav back to the top? Use a link.</p>
+ <!--Here we will use a link that points to some elements id. This points to the heading h1 at the top and when you click on it the page vision goes back to the top-->
+ <a href="#top">back to the top</a>
+<!--This is an unordered list whit some basic text formatting applied-->
+ <p>What if we want to have special types of texts and lists</p>
+ <ul>
+  <li><em>Emphasized text</em></li>
+  <li><strong>Strong text</strong></li>
+  <li><sup>Superscript</sup></li>
+  <li><sub>Subscript</sub></li>
+ </ul>
+ <!--This is an example of a table with some table headings(th) and some table data(td) contained in table rows(tr)-->
+ <p>What if we want to add a table with some headings and data?</p>
+ <table>
+  <tr>
+   <th>Human Name</th>
+   <th>Human Age</th>
+  </tr>
+  <tr>
+   <td>Jonah</td>
+   <td>28</td>
+  </tr>
+  <tr>
+   <td>Mel</td>
+   <td>26</td>
+  </tr>
+ </table>
+ <!--So We want to create a form which a user can fill in with their user information and submit for checking or whatever. We use form, label and input tags to define a proper form. Input params and types are numerous. Submit, radio, text-->
+ <p>What about forms?</p>
+ <form action="" method="">
+  <label for="u_name">User Name</label>
+  <input type="text" name="u_name" id="u_name">
+  <br>
+  <label for="u_pass">Password</label>
+  <input type="password" name="u_pass" id="u_pass" placeholder="password">
+  <br>
+  <br>
+  <br>
+  <!--Input can be used to do selections with radio or checkbox types-->
+  <p>What is your favorite coding lang</p>
+  <input type="radio" name="coding" id="" value="javascript">Javascript
+  <input type="radio" name="coding" id="" value="java">Java
+  <input type="radio" name="coding" id="" value="python">Python
+  
+  <br>
+  <select name="languages" id="">
+   <option value="#">Choose One</option>
+   <option value="javascript">Javascript</option>
+   <option value="java">Java</option>
+   <option value="python">Python</option>
+  </select>
+  <br>
+  <br>
+  <input type="submit">
+ </form>
+</body>
+<!--This is the footer element and you can put the special character for copyright. It's a nice shortcut-->
+<footer>copyright &copy; </footer>
+</html>

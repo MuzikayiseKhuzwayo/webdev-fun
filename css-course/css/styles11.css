@@ -1,0 +1,81 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#eading{
+ font-size: 40px;
+ text-transform: uppercase;
+ color: blue;
+}
+
+.heading{
+ font-size: 20px;
+ text-transform: capitalize;
+ color: green;
+}
+
+
+
+/* Children and descendants */
+/* If you want to select everh h1 inside a div just " " */
+
+div h1{
+ color: purple;
+}
+
+ /*If you want direct children of div you use ">". List item will not apply, hence the thing will fail.  */
+
+div > h1{
+ color: blue;
+}
+
+/* Calling all descendants of h1 type under class header */
+
+/* .header h1{
+ color: lightgreen;
+} 
+*/
+
+/* some elements have inborn class tyes */
+
+p::first-line{
+ font-weight: bold;
+}
+
+p::first-letter{
+ font-size: 3rem;
+}
+
+/* hover allows you to change some things when a user is hovering over an element */
+
+.header:hover{
+ background: blue;
+ color: white;
+}
+
+p:hover{
+ color: red;
+}
+
+/* the a element has some classes as well. link sets how it looks, visited is for previously visited, active is for on-click stuff */
+

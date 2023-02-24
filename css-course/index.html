@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Tutorial</title>
+ <!--Internal CSS. CSS that is placed in the head tag. Pro is that changes can affect whole doc. Con is that you lose usability for other documents-->
+ <!--Internal Style Sheet overrides external one-->
+ <style>
+  h3{
+   color: blue;
+   font-size: 1rem;
+  }
+ </style>
+ <!--External Css. Needs to be refrenced in the head. Pro is that you can use it throughout file system. Con is that its an extra file-->
+ <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+ <p><a href="./index.html">home</a></p>
+ <p><a href="./about.html">about</a></p>
+ <!--three ways that CSS is represented. Inline, internal and external-->
+ <!--Inline CSS. CSS that is placed in the tag itself. Pro is that you can change individual elements. Con is that it becomes tedious and clogged up.-->
+ <!--Inline CSS overrides both Internal and External CSS-->
+ <h1 style="color:darkcyan">Hello World</h1>
+ <h2 style="color: chartreuse ;">Hello People</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem sint omnis sunt enim laborum animi magnam, obcaecati, laboriosam ipsam velit, deserunt ex quo sit. Incidunt, provident delectus! Exercitationem quasi, ipsam voluptatum aperiam eos labore ipsum! Quae debitis nam explicabo minima sint, incidunt iste at adipisci voluptatum quis cumque quibusdam consequatur maxime voluptatibus illum! Perferendis quo maiores tempora, delectus, eius quam magnam cum repellat nihil sint doloribus atque hic at veniam quod illum, nemo aliquam necessitatibus tempore. Quam obcaecati modi pariatur tenetur, quod, magnam quisquam voluptatem, voluptatibus cupiditate dicta doloremque ab! Nisi natus animi sit cumque aperiam quidem laudantium quibusdam.</p>
+
+ <h1 id="heading">Footer Heading</h1>
+
+ <h3 class="green">I'm green</h3>
+ <h3 class="red">I'm red</h3> 
+ <br>
+ <br>
+ <div class="red">
+  <h3>Heading Number One</h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ipsa veritatis saepe consectetur, voluptatum nulla facere? Voluptas adipisci cupiditate illum.</p>
+ </div>
+ <div class="green">
+  <h3>Heading number two</h3>
+  <p>
+   Lorem ipsum dolor sit amet consectetur, <span>Hey I'm Uppercase</span> adipisicing elit. Harum eaque reprehenderit adipisci, rerum itaque impedit! Fugit <span>Hey I'm Uppercase</span> voluptatem hic itaque assumenda.
+  </p>
+ </div>
+ <br>
+ <br>
+ <p><a href="index2.html">Next Tutorial</a></p>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* This super selector is used to cancel out the browser specific settings. We set margin and padding to 0 to make sure that there are no extra margins and padding added to each element that mess up. We also set box-sizing to border box to make sure that even if each box has a set height and width, the natural browser specific padding does not increase the dimesnions of the box. */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Block elements take up full width
+Inline elements take up as much space as they contain. Browsers do not respect inline element padding and margin for top bottom, they just overlay over each other
+*/
+
+/* Display property changes how element is represented, eg from block to inline to grids and flexboxes */
+
+.block{
+ background: blue;
+ color: white;
+}
+
+.inline{
+ background: red;
+ color: white;
+}
+
+ul li{
+ list-style-type: none;
+}
+
+ul li a{
+ text-decoration: none;
+ text-transform: capitalize;
+ letter-spacing: 2px;
+ background: #222;
+ color: #f125d7;
+ display: block;
+ padding: 10px 10px;
+}
+
+/* opacity and visibility */
+
+div{
+ background: indigo;
+ margin: 10px;
+ color: white;
+}
+
+.none{
+ display: none;
+}
+
+.opacity{
+ opacity: 1;
+}
+
+.opacity-5{
+ opacity: 0.5;
+}
+
+.opacity-0{
+ opacity:0;
+}
+
+.visibility{
+ visibility: hidden;
+}

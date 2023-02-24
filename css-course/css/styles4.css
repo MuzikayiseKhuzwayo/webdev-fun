@@ -1,0 +1,44 @@
+/* Fonts and font family and font stacks */
+/* Font stacks allow browsers to choose a font if one is not available */
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-transform: uppercase;
+}
+
+/* Font weight makes things bolder. If yu imported, then it won't change
+Font-style makes things look weirder
+ */
+h1{
+ font-family: 'Qwitcher Grypen', cursive;
+ font-style: oblique;
+}
+
+.main{
+ text-align: center;
+}
+
+.sub{
+ font-style: italic;
+}
+
+/* line height: changes the spacing between lines vertically
+letter-spacing changes spacing between letters horizontally
+word-spacing is self explanatory
+text-transform transforms text to upper/lower case or whatever 
+text decoration adds or removes decor from text*/
+
+.one{
+ text-indent: 10rem;
+ line-height: 0.7rem;
+}
+
+.two{
+ text-align: right;
+ word-spacing: 2px;
+}
+
+a{
+ text-decoration: none;
+}
+
+/* We can import fonts from google fonts */

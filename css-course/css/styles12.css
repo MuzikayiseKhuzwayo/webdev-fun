@@ -1,0 +1,147 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* transform property applies transformations in terma of movement or rotation, scaling and skewing */
+
+/* transition controls change over time */
+
+/* animation change over time with points */
+
+/* transform.. has translate function */
+
+div{
+ width: 150px;
+ height: 150px;
+ display: inline-block;
+ margin: 15px;
+ transition: all 1s;
+ background: purple;
+ color: white;
+}
+
+/* translateX or Y moves object in direction by pixel or ratio of size. Negative Y direction is up. Negative X direction is left.*/
+
+/* scale hase scaleX and scaleY. If scaleX value is less than 1, the size gets trimmed on the left and right. If scale value is bigger than 1 then size gets multiplied from the center */
+
+/* transform:rotate rotates the element by x, y or z. rotate() is short hand for z rotation  */
+
+/* transform:skew skews the boys by a certain number of degrees */
+
+.one{
+ background: red;
+ /* transform: skewX(-20deg); */
+ /* transform: rotate(39deg); */
+ /* transform: translateX(30px); */
+}
+
+.two {
+ background: green;
+ /* transform: skewY(-20deg); */
+ /* transform: rotateY(60deg); */
+ /* transform: scaleX(2); */
+}
+
+.three {
+ background: blue;
+ /* transform: skewZ(-20deg); */
+  /* transform: rotateY(60deg); */
+  /* transition: all 4s 5s */
+}
+
+/* div:hover{
+ border-radius: 50%;
+ background: coral;
+} */
+
+/* transitions are changes that happen over time. There are many options for transitions, but you choose property and choose durationa and choose effect 
+Syntax... transition: property time delay;
+*/
+
+/* There are time-functions built in for transitions. the default timing function is to ease */
+
+div:hover{
+ transform: translateX(100px);
+}
+
+.ease{
+ transition-timing-function: ease;
+}
+
+.linear {
+ transition-timing-function: linear;
+}
+
+.ease-in {
+ transition-timing-function: ease-in;
+}
+
+.ease-out {
+ transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+ transition-timing-function: ease-in-out;
+}
+
+/* Transitions and animations are different
+Transitions go from 0 -> 100%
+Animations go from 0 -> 1 -> 2 -> ... -> 100%
+You have control at every step. */
+
+.transition{
+ background: indigo;
+ transition: all 2s linear;
+}
+
+.transition:hover{
+ background: blue;
+ transform: translateX(100px);
+}
+
+/* For animation you need to setup keyframes. You also need animation name and duration and iteration count */
+
+.animation{
+ background: indigo;
+ animation-name: move;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes move{
+ 0%{
+  transform: translateX(20px);
+ }
+ 50%{
+  transform: translateX(100px);
+  background: purple;
+ }
+ 75%{
+  transform: translateX(-200px);
+  background: rgb(102, 24, 24);
+ }
+ 100% {
+  transform: translateX(80px);
+  background: crimson;
+ }
+}

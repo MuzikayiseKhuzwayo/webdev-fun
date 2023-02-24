@@ -1,0 +1,36 @@
+/* CSS Box Model */
+/* Control three values from content center: padding, border and margin */
+/* padding syntax... padding: top, right, bottom, left */
+/* margin controls the spacing between the boys. Margin goes over the border. */
+*{
+ margin: 0;  
+}
+
+/* border lies above padding and before margin. Syntax... border: width style color */
+h1{
+ background: red;
+ padding: 30px;
+ margin: 50px;
+ border: 5px solid yellow
+}
+.one{
+ background: blue;
+ padding: 20px;
+ border: 5px dashed green;
+ border-radius: 50%;
+}
+
+/* Outline is above border and it has more functionalities evethough it is almost the same as border*/
+a{
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}

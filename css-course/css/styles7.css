@@ -1,0 +1,61 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div{
+ min-height: 100vh;
+ color: black;
+ font-size: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+/* background-position dictates the position of a background image or section
+background-size has options which size the background image... covers or multiplies or whatever
+background-position using relative values to manipulate the position of a background image
+background-attachment it attaches the background relative to something else. ackground can be fixed into place or scrollable*/
+
+.big-img{
+ background: url(../images/img_1.jpeg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.small-img{
+ background: url(../images/img_2.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.folder-img {
+ background: url(../images/img_3.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+

@@ -1,0 +1,166 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+ background: yellow;
+}
+
+.banner{
+ background: blue;
+}
+
+h1{
+ color: white;
+ text-align: center;
+ text-decoration: underline;
+ text-transform: capitalize;
+}
+
+/* Media queries allow us to change the screen in the screen size is different: eg for smartphones, tablets, laptops and large screen monitors */
+
+@media screen and (min-width: 576px){
+ body{
+  background: red;
+ }
+ .banner{
+  background: yellow;
+ }
+ h1{
+  color: black;
+  font-size: 60px;
+ }
+}
+
+@media screen and (min-width: 768px) {
+ body {
+  background: green;
+ }
+
+ .banner {
+  background: blue;
+ }
+
+ h1 {
+  color: magenta;
+  font-size: 60px;
+ }
+}
+
+/* Min width basically means that from that width onwards, this style aplies. But Max-width means that all sizes until then apply that style, if it goes beyond then it defaults. Max-width can be overridden but still inherit lower properties. */
+
+img{
+ width: 100px;
+ height: 100px;
+ position: absolute;
+}
+
+.banner2{
+ margin: 20px;
+ width: 70vw;
+ height: 70vh;
+ border: 5px solid red;
+ position: relative;
+}
+
+/* Z index controls the forwards or backwards positioning of an element. It can only work if the container has position relative and elements themselves have absolute positioning. */
+
+.one{
+ top: 0;
+ left: 0;
+ z-index: 0;
+}
+
+.two {
+ top: 10%;
+ left: 10%;
+ z-index: -1;
+}
+
+.three {
+ top: 20%;
+ left: 20%;
+ z-index: -2
+}
+
+/* Pseudo Elements */
+/* ::before can add content before an element executes using CSS */
+
+p::before{
+ content: "hello ";
+ font-weight: bold;
+ font-size: 2rem;
+ color: red;
+}
+
+p::after{
+ content: "";
+ display: block;
+ width: 50px;
+ height: 50px;
+ background: black;
+}
+
+.big-div{
+ width: 60vw;
+ margin: 100px auto;
+ border: 2px solid red;
+ position: relative;
+}
+
+.big{
+ width: 100%;
+ height: 200px;
+ display: block;
+ position: static;
+}
+
+.big-div::before{
+ content: "";
+ border: 2px solid grey;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ box-sizing: border-box;
+ top: -40px;
+ left: -40px;
+ z-index: -2;
+}
+
+.big-div::after {
+ content: "";
+ border: 2px solid grey;
+ background: grey;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ box-sizing: border-box;
+ top: -20px;
+ left: -20px;
+ z-index: -1;
+}
+
+.big-div:hover::after, .big-div:hover::before{
+ top: 0;
+ left: 0;
+}

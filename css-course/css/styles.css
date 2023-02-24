@@ -1,0 +1,60 @@
+h1{
+ color: crimson;
+}
+h2{
+ font-size: 2rem;
+}
+h3{
+ color: cadetblue;
+}
+/* CSS comment, to activate do ctrl+/ */
+
+/* CSS can be used in refrence to IDs */
+/* ID Selector */
+#heading{
+ color: green;
+ background: black;
+}
+
+/* Class Selectors */
+.green{
+ color: green;
+ background: grey;
+} 
+.red{
+ color: red;
+ background: grey;
+}
+
+/* Div and Span Selectors and sections */
+div{
+ color: black;
+ background: grey;
+}
+
+span{
+ text-transform: uppercase;
+ color: black;
+}
+
+/* Inheritance: CSS for parent classes will be inherited by children unless children have specific attribute setting*/
+body{
+ font-family: monospace;
+ line-height: 1.5em;
+}
+
+/* CSS will always apply the last rule you apply if you have multiple rules for the same selector */
+
+p{
+ color: red;
+}
+
+p{
+ color: black;
+}
+
+/* Universal Selector selects all the elements, but it has the least amount of specificity so it can get overridden */
+
+*{
+ color: aqua;
+}

@@ -1,0 +1,51 @@
+/* font size, width, height, pixels */
+/* Pixels are absolute values of measurement. They never change in whatever representation (laptop, smartphone...) */
+h1{
+ font-size: 60px;
+ width: 400px;
+ background: blue;
+}
+
+/* Percentages are relative values. They will always depend on the parent element values */
+
+.inner{
+ width: 50%;
+ height: 50%;
+ background: red;
+}
+
+.outer{
+ width: 500px;
+ height: 500px;
+ background: blue;
+}
+
+/* em is a pixel measurement standard. One em is about 16px for most browsers. Em will follow the parent font size always. If parent is 10px then em is 10px*/
+
+/* rem values are based on the root of the document (html). They dont change based on other parents because root is the ancestor. */
+
+body{
+ font-size: 10px;
+}
+
+.relative{
+ font-size: 2em;
+}
+
+.absolute{
+ font-size: 32px;
+}
+
+.root{
+ font-size: 2rem;
+}
+
+/* vw = view width, vh = view height. It will change itself based on the screen dimensions. Normally used for banner images */
+
+.banner{
+ width: 50vw;
+ height: 50vh;
+ background: grey;
+}
+
+/* Calc function performs math ops */

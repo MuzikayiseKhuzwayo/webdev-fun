@@ -1,0 +1,110 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CSS Variables hold a value and reuse it
+--varName:value
+property:var1(--varName)
+scope
+:root{} = global , store any variable and reuse it throughout the doc
+element = local  */
+
+:root{
+ --primaryColor:#f15025;
+ --secondaryColor: #1313fa;
+ --mainTransition: all 4s linear;
+}
+
+.heading{
+ color: var(--primaryColor);
+}
+
+.text{
+ color: aquamarine;
+}
+
+.main-text{
+ color: blueviolet;
+}
+
+.second-heading{
+ color: var(--secondaryColor);
+ transition: var(mainTransition);
+}
+
+.third-heading{
+ color: firebrick;
+}
+
+div{
+ --primaryRed: red
+}
+
+.main-text{
+ color: var(--primaryRed)
+}
+
+.fa-home{
+ color: green;
+ font-size: 4rem;
+}
+
+.social{
+ font-size: 4rem;
+ color: blue;
+}
+
+h1{
+ text-shadow: 1px 1px 3px red;
+}
+
+.box{
+ width: 200px;
+ height: 100px;
+ background: blue;
+ margin: 20px;
+ transition: all 1s linear;
+}
+
+.box:hover{
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+ box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* HTML semantic tags allow you to make your html more readable and make it more accessible to readers with different backgrounds.*/
+/* These include, but are not limited to
+<article>
+<aside>
+<details>
+<figcaptions>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time> */
+

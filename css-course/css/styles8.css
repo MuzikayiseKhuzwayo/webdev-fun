@@ -1,0 +1,79 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div{
+ width: 150px;
+ height: 150px;
+ display: inline-block;
+ margin: 5px;
+}
+
+.one{
+ background: linear-gradient(red, green);
+}
+
+.two {
+ background: linear-gradient(to top, green, red, blue, yellow);
+}
+
+.three {
+ background: linear-gradient(315deg, red, green);
+}
+
+.four {
+ background: linear-gradient(to bottom right, red, green);
+}
+
+.five {
+ background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+}
+
+.six {
+ background: linear-gradient(to left ,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+/* Gradient type Banner  */
+
+.eg2{
+ min-height: 100vh;
+ min-width: 100vw;
+ display: flex;
+ align-items:center;
+ justify-content: center;
+ text-align: center;
+ color: white;
+}
+
+.banner{
+ background: url(../images/image_1.jpg);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.header{
+ background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)),
+  url(../images/image_1.jpg) center/cover no-repeat fixed;
+}

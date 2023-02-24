@@ -1,0 +1,39 @@
+body {
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bold;
+ text-align: center;
+ justify-content: center;
+ background: green;
+}
+
+a {
+ color: black;
+ background: white;
+ text-decoration: none;
+ padding: 5px;
+}
+
+h1{
+ color: gold;
+ font-weight: bolder;
+ font-size: 40px;
+}
+
+p{
+ color: white;
+ font-size: 20px;
+}
+
+#message-el{
+ color: silver;
+ font-style: italic;
+}
+
+button{
+ padding: 5px;
+ width: 200px;
+ color: green;
+ background: goldenrod;
+ font-weight: bolder;
+ font-size: 18px;
+}

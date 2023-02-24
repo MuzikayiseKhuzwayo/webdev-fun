@@ -1,0 +1,104 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ background: lightgreen;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ margin: 10px;
+ color: black;
+ text-transform: uppercase;
+ cursor: pointer;
+
+ outline-width: 0.2rem;
+ outline-style: solid;
+ outline-color: #222;
+ outline-offset: -10px;
+}
+
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Block leveel shit can be 'floated' out of it's position. If you float it then you can tell the other element to clear it and continue the normal flow of the document. */
+
+.banner{
+ border: 5px solid red;
+ padding: 10px;
+}
+
+/* Float allows an element to occupy the same space as another element. You can float in most directions.*/
+/* Clear allows an element to position itself after a floated element */
+
+img{
+ float: right;
+}
+
+p{
+ clear: both;
+}
+
+.one{
+ float: left;
+ background: red;
+ height: 200px;
+ width: 33.33%;
+}
+
+.two {
+ float: left;
+ background: blue;
+ height: 200px;
+ width: 33.33%;
+}
+
+.three {
+ float: left;
+ background: green;
+ height: 200px;
+ width: 33.33%;
+}
+
+/* Position has many options... lets explore */
+
+/* position: static, means that everything must be displayed as it is typed in */
+/* position: relative, means that you can move something from where it was sitting previously. It's almost like manual floating. */
+/* position: absolute, places the position relative to the nearest ancestor that has the position:relative. If there are no ancestors you can set coordinates with top, bottom, left, right  */
+/* position:fixed, fixes the position of an element so that even as you scroll, the element does not move. Normally used for nav bars and shit */
+
+.position{
+ border: 3px solid red;
+ background: yellow;
+ margin-top: 40px;
+ position: static;
+}
+
+.p-one{
+ background: blue;
+
+}
+
+.p-two{
+ background: green;
+ position: relative;
+}
+
+.special{
+ background: orange;
+ font-size: 20px;
+ position: absolute;
+ top: 0;
+ right:0;
+}
+
+button{
+ background: aqua;
+ font-size: 40px;
+ color: white;
+ position: fixed;
+ top: 0;
+ right: 0;
+}
